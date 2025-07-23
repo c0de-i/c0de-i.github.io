@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourName IT Solutions | Cybersecurity & Digital Forensics Specialist</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ======================== NAVIGATION ======================== -->
+  <header class="nav-wrapper" aria-label="Primary Navigation">
+    <nav class="container nav flex items-center justify-between" id="navbar">
+      <a href="#hero" class="brand" aria-label="Homepage">YourName IT <span class="txt-accent">Solutions</span></a>
+      <!-- Hamburger -->
+      <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero" class="hero flex items-center justify-center text-center">
+    <div class="hero__content container">
+      <h1 class="hero__title">YourName IT Solutions</h1>
+      <p class="hero__tagline">Cybersecurity &amp; Digital Forensics Specialist</p>
+      <a href="#contact" class="btn btn--primary hero__cta">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section id="about" class="section about container">
+    <h2 class="section__title">About Me</h2>
+    <div class="about__grid">
+      <div class="about__photo" role="img" aria-label="Profile photo"></div>
+      <div class="about__text">
+        <p>Hi, I'm <strong>Your Name</strong> — a cybersecurity, networking, and digital forensics consultant passionate about safeguarding digital assets and unraveling complex incidents.</p>
+        <p><strong>Education:</strong> B.Tech IT (Graduate), pursuing M.Tech Cyber Forensics &amp; Information Security.</p>
+        <p><strong>Key Skills:</strong></p>
+        <ul class="skills-list">
+          <li>Cybersecurity</li>
+          <li>Networking</li>
+          <li>Digital Forensics</li>
+          <li>System Administration</li>
+          <li>Graphics Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section id="services" class="section services container">
+    <h2 class="section__title">Services</h2>
+    <div class="services__grid" id="servicesGrid">
+      <!-- cards injected by JS for easier maintenance -->
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects" class="section projects container">
+    <h2 class="section__title">Projects</h2>
+    <div class="projects__grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS ======================== -->
+  <section id="testimonials" class="section testimonials container">
+    <h2 class="section__title">Testimonials</h2>
+    <div class="testimonials__wrapper" id="testimonialsWrapper"></div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="section contact container">
+    <h2 class="section__title">Contact</h2>
+    <div class="contact__grid">
+      <div class="contact__details">
+        <p><strong>Email:</strong> <a href="mailto:contact@yourname.tech">contact@yourname.tech</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919876543210">+91-98765-43210</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">linkedin.com/in/yourname</a></p>
+        <p><strong>Location:</strong> Nagpur, Maharashtra</p>
+      </div>
+      <form id="contactForm" class="contact__form" novalidate>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+        <p id="formStatus" class="status hidden" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container flex justify-between items-center py-16">
+      <span>&copy; <span id="year"></span> YourName IT Solutions</span>
+      <div class="footer__social flex gap-8">
+        <a href="mailto:contact@yourname.tech" aria-label="Email">
+          <!-- Envelope SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <!-- LinkedIn SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452H16.89v-5.569c0-1.329-.027-3.042-1.852-3.042-1.853 0-2.136 1.445-2.136 2.939v5.672H9.346V9h3.396v1.561h.047c.474-.9 1.632-1.852 3.357-1.852 3.59 0 4.255 2.363 4.255 5.438v6.305zM5.337 7.433a1.966 1.966 0 11-.001-3.933 1.966 1.966 0 010 3.933zM6.964 20.452H3.715V9h3.25v11.452z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
