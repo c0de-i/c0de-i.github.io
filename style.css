@@ -1018,4 +1018,11 @@ html {
   color: var(--clr-accent);
 }
 
+.about__photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes photo circular */
+  border: 3px solid #1366cc; /* Optional border */
+}
 /* ================== END CUSTOM STYLE ================== */
