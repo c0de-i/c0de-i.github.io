@@ -363,7 +363,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-hover);
+  color: var(--clr-primary);
 }
 
 code,
@@ -772,10 +772,10 @@ html {
 .brand {
   font-weight: 600;
   font-size: var(--font-size-lg);
-  color: var(--clr-primary);
+  color: var(--color-teal-400);
 }
 .brand .txt-accent {
-  color: var(--clr-secondary);
+  color: var(--color-teal-400);
 }
 
 /* Burger */
@@ -804,7 +804,7 @@ html {
 }
 
 .nav-link {
-  color: var(--clr-neutral);
+  color: var(--color-teal-400);
   font-weight: 500;
 }
 
