@@ -928,9 +928,7 @@ html {
   transition: box-shadow var(--duration-normal) var(--ease-standard);
 }
 
-.service-card:hover {
-  box-shadow: var(--shadow-md);
-}
+.service-card:hover { box-shadow: 0 4px 10px rgba(21, 124, 153, 0.66); }
 
 .service-card__icon {
   font-size: 2rem;
@@ -955,7 +953,7 @@ html {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-xs);
 }
-
+.project-card:hover { box-shadow: 0 4px 10px rgba(21, 124, 153, 0.66); }
 .project-card h3 {
   margin-bottom: var(--space-8);
   font-size: var(--font-size-lg);
@@ -987,6 +985,7 @@ html {
   flex: 1;
   box-shadow: var(--shadow-xs);
 }
+.testimonial-card:hover { box-shadow: 0 4px 10px rgba(21, 124, 153, 0.66); }
 
 .testimonial-quote {
   font-style: italic;
@@ -996,7 +995,22 @@ html {
 .testimonial-name {
   font-weight: var(--font-weight-semibold);
 }
-
+/* -------------------- blog -------------------- */
+.blog-list {
+  display: grid;
+  gap: 1.5rem;
+}
+.blog-item {
+  border: 1px solid var(--color-card-border);
+  padding: 1.25rem 1.5rem;
+  border-radius: 6px;
+  background: var(--color-surface);
+  transition: box-shadow .2s;
+}
+.blog-item:hover { box-shadow: 0 4px 10px rgba(21, 124, 153, 0.66); }
+.blog-title { margin: 0 0 .3rem; font-size: 1.1rem; }
+.blog-date  { display: block; font-size: .85rem; color: #d7cece; margin-bottom: .4rem; }
+.blog-excerpt{ margin: 0; color: #c5e2d3; line-height: 1.4; }
 /* -------------------- CONTACT -------------------- */
 .contact__grid {
   display: grid;
