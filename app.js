@@ -8,16 +8,31 @@ const data = {
     tagline: "Cybersecurity & Digital Forensics Specialist",
   },
   services: [
-    { title: "Cybersecurity Consulting",
-      description: "Remote vulnerability assessments, managed security, firewall configuration, compliance advisory" },
-    { title: "Digital Forensics & Incident Response",
-      description: "Evidence collection, disk imaging, investigation reports, expert witness testimony" },
-    { title: "Network Infrastructure & System Administration",
-      description: "Network design, VPN setup, server hardening, cloud migration" },
-    { title: "IT Training & Workshops",
-      description: "Online courses in cybersecurity basics, MS Office, networking essentials, graphic design" },
-    { title: "Graphics & Document Design",
-      description: "Logo and brochure design, professional reports and presentations" },
+    {
+    title: "Cybersecurity Consulting",
+    description: "Risk assessment, firewall configuration, vulnerability management, compliance (ISO 27001, NIST)",
+    quote: "Starting at ₹15,000/project"
+  },
+  {
+    title: "Digital Forensics & Incident Response",
+    description: "Evidence acquisition, memory/disk analysis, malware tracing, expert witness testimony",
+    quote: "Starting at ₹25,000/case"
+  },
+  {
+    title: "Network & Cloud Infrastructure",
+    description: "VPN setup, server hardening, cloud migration (AWS, Azure), secure network design",
+    quote: "Starting at ₹12,000/deployment"
+  },
+  {
+    title: "Cybersecurity & IT Training",
+    description: "Workshops on cyber hygiene, Windows/Linux security, ethical hacking, office productivity tools",
+    quote: "Starting at ₹5,000/session"
+  },
+  {
+    title: "Document & Graphic Design",
+    description: "Cybersecurity reports, official certificates, logos, social media graphics, presentation decks",
+    quote: "Starting at ₹2,500/document"
+  },
   ],
   testimonials: [
     { name: "Ankit Sharma", role: "Owner, Sharma Textiles",
@@ -26,13 +41,38 @@ const data = {
       quote: "The digital evidence report was thorough and instrumental in securing a conviction." },
   ],
   projects: [
-    { title: "SME Ransomware Recovery",
-      summary: "Led incident response, restored operations within 48 hours", year: 2024 },
-    { title: "Network Overhaul for Community Hospital",
-      summary: "Designed and deployed secure Wi-Fi and VPN for 300+ staff", year: 2023 },
-    { title: "Online Security Bootcamp",
-      summary: "Delivered 6-week cybersecurity fundamentals course to 120 students", year: 2025 },
-  ],
+    {
+    title: "Penetration Testing on Windows",
+    description: "Performed full lifecycle penetration testing on Windows environments including privilege escalation, Active Directory exploitation, and report generation.",
+    year: 2021
+  },
+     {
+    title: "Advanced Port Scanner (Python)",
+    year: 2022,
+    description: "Built a multithreaded port scanner with banner grabbing, TCP/UDP detection, and dynamic scanning ranges."
+  },
+      {
+    title: "Keyrat Malware (Python)",
+    year: 2023,
+    description: "Developed a keylogger malware in Python for controlled demo and training purposes"
+  },
+  {
+    title: "FSP Bootcamp Hands-on Manual and Training",
+    year: 2024,
+    description: "Designed and delivered a offline/virtual bootcamp on cybersecurity basics, Linux hardening, and forensics to 500+ students."
+  },
+  {
+    title: "NeGD Forensics Training Content",
+    year: 2025,
+    description: "Created forensic investigation training modules for government officers under the NeGD initiative."
+  },
+  {
+    title: "WireGuard VPN with pfSense Deployment",
+    year: 2025,
+    description: "Designed and implemented secure remote access using WireGuard and pfSense firewall"
+  }
+],
+
 
   /* ---------- BLOG (NEW) ---------- */
   blog: [
@@ -98,7 +138,7 @@ function injectProjects() {
     card.innerHTML = `
       <h3>${proj.title}</h3>
       <span>${proj.year}</span>
-      <p>${proj.summary}</p>`;
+      <p>${proj.description}</p>`;
     grid.appendChild(card);
   });
 }
