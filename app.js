@@ -76,16 +76,16 @@ const data = {
 
   /* ---------- BLOG (NEW) ---------- */
   blog: [
-    { title: "Inside KeyRAT: Anatomy of a Dual-Threat Malware",
-      date: "2025-07-15",
+    { title: "KeyRAT: KeyLogger with Remote Access Trojan",
+      date: "2023-05-05",
       excerpt: "KeyRAT merges key-logging and remote-access capabilities. Learn how it works and how to detect it.",
-      url: "blog/keyrat-anatomy.html" },
-    { title: "A Beginner’s Ethical Hacking Lab: Footprinting & Recon",
-      date: "2025-06-20",
+      url: "https://www.irjmets.com/uploadedfiles/paper//issue_5_may_2023/38706/final/fin_irjmets1683952106.pdf" },
+    { title: "A Beginner’s Ethical Hacking Lab",
+      date: "2023-10-20",
       excerpt: "Spin up a safe test environment and master the first phase of penetration testing.",
-      url: "blog/ethical-hacking-lab.html" },
+      url: "https://drive.google.com/file/d/1DL0oUk0J1JB7q71t2dIcVLFUdzPZsJu3/view?usp=sharing" },
     { title: "From District to Nationals: My IndiaSkills Cybersecurity Story",
-      date: "2024-12-02",
+      date: "2024-07-02",
       excerpt: "What competitive cybersecurity taught me about discipline, teamwork, and rapid learning.",
       url: "blog/indiaskills-journey.html" },
     { title: "Top 5 Ways to Spot a Phishing Attack in 2025",

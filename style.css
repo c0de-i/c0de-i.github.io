@@ -1027,6 +1027,25 @@ html {
 #formStatus {
   margin-top: var(--space-16);
 }
+/* -------------------- blog article-------------------- */
+.blog-article {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #e0f0ec;
+}
+.blog-article h1, .blog-article h2 {
+  color: #e6faff;
+  margin-top: 2rem;
+}
+.blog-article ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+.blog-article li {
+  margin-bottom: 0.5rem;
+}
 
 /* -------------------- FOOTER -------------------- */
 .footer {
