@@ -181,6 +181,56 @@ function formatDate(iso) {
   return new Date(iso).toLocaleDateString(undefined, opts);
 }
 /* ========== BLOG END ========== */
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".page-section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Show only #hero on load
+  sections.forEach(section => {
+    if (section.id === "hero") {
+      section.classList.add("active");
+    } else {
+      section.classList.remove("active");
+    }
+  });
+  if (window.innerWidth < 768) {
+  const navMenu = document.getElementById("nav-menu");
+  const burger = document.getElementById("burger");
+  if (burger && navMenu.classList.contains("open")) {
+    navMenu.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+  }
+}
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (!targetSection) return;
+
+      // Hide all sections
+      sections.forEach(section => {
+        section.classList.remove("active");
+      });
+
+      // Show selected section
+      targetSection.classList.add("active");
+
+      // Scroll to the section smoothly
+      targetSection.scrollIntoView({ behavior: "smooth" });
+
+      // Close mobile menu if needed
+      const navMenu = document.getElementById("nav-menu");
+      const burger = document.getElementById("burger");
+      if (burger && navMenu.classList.contains("open")) {
+        navMenu.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+});
 
 /* ---------- NAV & SMOOTH SCROLL ---------- */
 function initNavToggle() {
